@@ -33,7 +33,7 @@ public class Driver {
 		int h = View.getSize().height;
 		int x = (dimension.width - w) / 2;
 		int y = (dimension.height - h) / 2;
-		View.setTitle("VAT");
+		View.setTitle("JVAT");
 		View.setLocation(x, y);
 		View.setVisible(true);
 	}
