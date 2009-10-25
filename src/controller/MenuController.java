@@ -859,7 +859,7 @@ public class MenuController implements ActionListener, MouseListener {
 			image = image.getSubimage(x, y, wx, hx);
 		}
 		g2.dispose();
-
+                // Image smoothing sample taken from http://www.lac.inpe.br/~rafael.santos/JIPCookbook/index.jsp
 		int kernelSize = 7;
 		float[] kernelMatrix = new float[kernelSize * kernelSize];
 		for (int k = 0; k < kernelMatrix.length; k++)
