@@ -965,6 +965,9 @@ public class MenuController implements ActionListener, MouseListener {
 
 	}
 
+        // Sobel sample taken from
+        // http://web.unbc.ca/~holenstr/programming/archive/cpsc495/roman/examples/EdgeDetector.java
+
 	public static BufferedImage createEdgeImage(BufferedImage srcImage,
 			BufferedImageOp op) {
 		BufferedImage destImage = op.createCompatibleDestImage(srcImage,
