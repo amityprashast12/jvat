@@ -29,7 +29,7 @@
  *
  */
 
-package tool;
+package tools;
 
 import java.awt.image.BufferedImage;
 import java.util.Arrays;

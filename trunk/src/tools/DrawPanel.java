@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-package tool;
+package tools;
 
 import java.awt.*;
 import java.awt.geom.*;

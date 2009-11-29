@@ -14,10 +14,9 @@
    limitations under the License.
  */
 
-package tool;
+package driver;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
+
 import view.MenuView;
 import model.MenuModel;
 import controller.MenuController;
@@ -27,14 +26,6 @@ public class Driver {
 		MenuModel Model = new MenuModel();
 		MenuView View = new MenuView(Model);
 		MenuController Control = new MenuController(View, Model);
-		// According to the screen size, place the window in the middle
-		Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-		int w = View.getSize().width;
-		int h = View.getSize().height;
-		int x = (dimension.width - w) / 2;
-		int y = (dimension.height - h) / 2;
-		View.setTitle("JVAT");
-		View.setLocation(x, y);
 		View.setVisible(true);
 	}
 }
