@@ -29,8 +29,10 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
-import tool.DrawPanel;
+import tools.DrawPanel;
 
 import controller.MenuController;
 import model.MenuModel;
@@ -231,6 +233,13 @@ public class MenuView extends JFrame {
 		cpanel.add(clear);
 		cpanel.setLayout((LayoutManager) new FlowLayout(FlowLayout.LEFT));
 		setSize(300, 100);
+                Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+		int w = this.getSize().width;
+		int h = this.getSize().height;
+		int x = (dimension.width - w) / 2;
+		int y = (dimension.height - h) / 2;
+		this.setTitle("JVAT");
+		this.setLocation(x, y);
 		saveObj.setEnabled(false);
 	}
 

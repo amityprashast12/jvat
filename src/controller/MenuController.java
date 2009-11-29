@@ -87,7 +87,7 @@ import blob.BlobDetection;
 import blob.EdgeVertex;
 
 import view.MenuView;
-import tool.CannyEdgeDetector;
+import tools.CannyEdgeDetector;
 import model.MenuModel;
 
 public class MenuController implements ActionListener, MouseListener {

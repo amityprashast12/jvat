@@ -23,7 +23,7 @@ import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.QuadCurve2D;
 import javax.swing.event.MouseInputAdapter;
-import tool.DrawPanel;
+import tools.DrawPanel;
 
 public class LineController extends MouseInputAdapter {
 	DrawPanel view;
